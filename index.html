@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/cb64a1b0a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar with links to all of the projects -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">JS Practice</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#stopwatch" class="navbar__links" id="stopwatch-page">Stopwatch</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">Practice JS Projects</span></h1>
+            <p class="hero__description">View projects using navigation bar above</p>
+            <button class="main_button"><a href="#">GitHub</a></button>
+        </div>
+    </div>
+
+    <!-- Stopwatch Section -->
+    <div class="stopwatch" id="stopwatch">
+        <div class="stopwatch__container">
+            <h1 class="stopwatch__heading">STOPWATCH</span></h1>
+            <div class="watch__container">
+                <div class="watch"><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="tens">00</span></div>
+            </div>
+            <div class="button__container">
+                <button class="stopwatch__btn" id="startStopBtn">Start</button>      <!-- Make a start & stop -->
+                <button class="stopwatch__btn" id="resetBtn">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
