@@ -227,4 +227,67 @@ h1.stopwatch__heading {
     font-size: 15px;
     font-weight: 550;
     color: black;    
+    cursor: pointer;
+}
+
+/* Calculator */
+.calculator{
+    background-color: #52607a;
+    padding: 10rem 0;
+}
+
+.calculator__container {
+    background: #fff; 
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 1;
+    width: 80%;
+    max-width: 500px;
+    height: 600px;
+    padding: 20px 20px;
+    display: block;
+}
+
+.result__container {
+    background: #fff; 
+    border-style: inset;
+    border-width: thin;
+    margin-left: 0;
+    align-items: right;
+    justify-content: right;
+    margin: auto;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+}
+
+.calculator__buttons{
+    display: block;
+}
+
+.operators__container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    column-gap: 10px;
+
+}
+
+.operators__container button{
+    background-color: #84888f;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 2px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
