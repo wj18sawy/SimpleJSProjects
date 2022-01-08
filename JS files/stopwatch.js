@@ -72,9 +72,14 @@ startStopBtn.onclick = () => {
     intervalId = setInterval((start), 10);
 }
 
-resetBtn.onclick = () => {
+resetBtn.onclick = () => {   
+    going = false;
     clearInterval(intervalId);
+    tens = 0;
+    seconds = 0;
+    minutes = 0;
     tensText.innerHTML = "00";
     secondsText.innerHTML = "00";
     minutesText.innerHTML = "00";
+    startStopBtn.innerHTML = "Start";
 }
